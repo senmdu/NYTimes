@@ -38,7 +38,7 @@ final class NYTimesUITests: XCTestCase {
     
     // MARK: - Testing App UI
     
-    func testApp() throws {
+    func testAppUI() throws {
          let app = XCUIApplication()
          app.launch()
          XCTAssertTrue(app.cells["cell_0"].waitForExistence(timeout: 5.0))

@@ -10,11 +10,12 @@ import Foundation
 
 final class NYTimesApiTests: XCTestCase {
     
-    // MARK: - Top Movies List Api Test
     
     override class func tearDown() {
         super.tearDown()
     }
+    
+    // MARK: - Most Popular Articles Api Test
     
     func test_MostPopularList_Api_url_builder() {
         let request: Request<Response<MostPopular>> = MostPopular.request(for: 1)
@@ -32,7 +33,7 @@ final class NYTimesApiTests: XCTestCase {
                 XCTFail("\(url.absoluteString) failed")
                 return
             }
-            XCTAssertGreaterThan(movie.results.count, 0, "Movies result is empty")
+            XCTAssertGreaterThan(movie.results.count, 0, "Articles result is empty")
             expectation.fulfill()
         }
         waitForExpectations(timeout: 5, handler: nil)
