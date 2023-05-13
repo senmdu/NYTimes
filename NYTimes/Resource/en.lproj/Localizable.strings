@@ -1,0 +1,29 @@
+/* 
+  Localizable.strings
+  NYTimes
+
+  Created by Senthil on 13/05/23.
+  
+*/
+
+
+/* Most Popular Article List */
+
+"nytimes.page.popular.title" = "NYTimes Most Popular";
+
+"nytimes.page.article.title" = "Article";
+
+"nytimes.page.article.source" = "Source: %@";
+
+
+/* Action Buttons */
+
+"nytimes.actionButton.ok" = "Ok";
+
+
+/* Error */
+
+"nytimes.load.error.internet" = "Please check your internet connection";
+
+"nytimes.load.error.unknown" = "Something went wrong";
+
