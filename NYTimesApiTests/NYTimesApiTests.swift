@@ -12,6 +12,10 @@ final class NYTimesApiTests: XCTestCase {
     
     // MARK: - Top Movies List Api Test
     
+    override class func tearDown() {
+        super.tearDown()
+    }
+    
     func test_MostPopularList_Api_url_builder() {
         let request: Request<Response<MostPopular>> = MostPopular.request(for: 1)
         let url = URL(APIManager.host, APIManager.apiKey, request)
