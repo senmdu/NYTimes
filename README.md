@@ -1,5 +1,5 @@
 # NYTimes
-NY Times Most Popular Articles - Assessment For **Avrioc Technologies**
+NY Times Most Popular Articles
 
 ## OverView
      
